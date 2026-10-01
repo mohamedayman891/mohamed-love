@@ -130,7 +130,7 @@ input[type=range]{width:100%;accent-color:var(--red);height:32px}
 </div>
 
 <script>
-const NAME = "";  // اكتب الاسم هنا لو عايز، وسيبه فاضي عشان يظهر "إلى" بس
+const NAME = "ساميه";  // اكتب الاسم هنا لو عايز، وسيبه فاضي عشان يظهر "إلى" بس
 const MSGS = [
   "وجودك في حياتي أحلى حاجة حصلتلي.",
   "كل يوم معاكي أحلى من اللي قبله.",
@@ -192,7 +192,7 @@ env.onclick = openIt;
 document.getElementById('openBtn').onclick = openIt;
 
 /* ---------- الاسم والرسالة ---------- */
-// document.getElementById('to').textContent = NAME ? 'إلى ' + NAME : 'إلى';  
+ document.getElementById('to').textContent = NAME ? 'إلى ' + NAME : 'إلى';  
 const letter = document.getElementById('letter');
 let mi = 0, typing = 0;
 function typeMsg(t){
